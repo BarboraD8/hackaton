@@ -10,6 +10,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 100px;
   padding-left: 40px;
   padding-right: 40px;
@@ -49,11 +53,85 @@ body {
   margin: 10px;
 }
 
+.page2__menu {
+  ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 30px;
+  }
+  .menu__list {
+    display: flex;
+  }
+}
+
+.page2__container {
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
+  img {
+    width: 100%;
+  }
+}
+
+.menu__section {
+  display: flex;
+  justify-content: space-between;
+  section {
+    width: 40%;
+  }
+}
+
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__heading h2 {
+    margin: 12% 1rem 1rem 1rem;
+    padding: 0;
+  }
+
+  &__heading p {
+    margin: 1rem;
+    padding: 0;
+    text-align: justify;
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    width: 33vw;
+    height: fit-content;
+  }
+
+  img {
+    width: 33vw;
+    height: fit-content;
+  }
+}
+
 .footer {
-  position: sticky;
-  bottom: 0;
-  left: 0;
-  right: 0;
   display: flex;
   flex-direction: column;
   height: 20vw;
@@ -100,36 +178,36 @@ body {
   }
 }
 
-.page2__menu {
-  ul {
-    list-style: none;
-    padding: 0px;
-    margin: 0px;
-    margin-bottom: 30px;
-  }
-  .menu__list {
+@media (max-width: 850px) {
+  .product__cards {
     display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
   }
 }
 
-.page2__container {
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-top: 50px;
-  img {
-    width: 100%;
-  }
-}
+@media (max-width: 620px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
-.menu__section {
-  display: flex;
-  justify-content: space-between;
-  section {
-    width: 40%;
-  }
-}
+    &__nav {
+      display: flex;
+      flex-wrap: wrap;
+      flex-grow: 1;
+      height: 100%;
+    }
+    &__list {
+      display: flex;
+      width: 100%;
+      height: 100%;
+    }
 
-.menu__list {
-  display: flex;
-  justify-content: space-between;
+    &__text {
+      display: flex;
+      text-align: right;
+    }
+  }
 }
