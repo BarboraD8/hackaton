@@ -221,7 +221,18 @@ body {
   }
 }
 
-@media screen and (max-width: 700px) {
+//menu media
+
+@media screen and (max-width: 800px) {
+  .page2__container {
+    padding: 30px;
+    margin: 10px;
+  }
+  .page2__menu {
+    margin: 0px;
+    padding: 0px;
+  }
+
   .menu__section {
     display: flex;
     flex-direction: column;
@@ -230,6 +241,14 @@ body {
   .page2__container {
     h2 {
       text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width:720px) {
+    .menu__section {
+    section {
+      width: 90%;
     }
   }
 }
