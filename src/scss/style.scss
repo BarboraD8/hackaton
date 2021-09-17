@@ -21,11 +21,11 @@ body {
   span {
     margin: 7px;
     a {
-        text-decoration: none;
-        color: black;
-        &:hover {
-            color: white;
-        }
+      text-decoration: none;
+      color: black;
+      &:hover {
+        color: white;
+      }
     }
   }
 }
@@ -46,5 +46,22 @@ body {
 }
 
 .info__text {
-    margin: 10px;
+  margin: 10px;
+}
+
+.page2__menu {
+  ul {
+    list-style: none;
+    padding:0px;
+    margin: 0px;
+  }
+  .menu__list {
+      display: flex;
+  }
+}
+
+.page2__container {
+    img {
+        width: 500px;
+    }
 }
