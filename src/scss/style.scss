@@ -43,6 +43,10 @@ body {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr 1fr;
+  @media screen and (max-width: 700px) {
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
 }
 
 .info__text {
@@ -109,6 +113,9 @@ body {
   }
   .menu__list {
     display: flex;
+    ul {
+      list-style: none;
+    }
   }
 }
 
@@ -132,4 +139,75 @@ body {
 .menu__list {
   display: flex;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 700px) {
+  .menu__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .page2__container {
+    h2 {
+      text-align: center;
+    }
+  }
+}
+
+.page4 {
+  h2 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+}
+.team__images {
+  display: flex;
+  justify-content: space-around;
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.imagef {
+  width: 40%;
+  text-align: center;
+  img {
+    width: 100%;
+  }
+}
+
+.container4 {
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  img {
+    width: 100%;
+  }
+}
+
+form {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  input {
+    margin: 5px;
+  }
+  textarea {
+    width: 320px;
+    margin-left: 3px;
+  }
+  button {
+    width: 320px;
+    margin-left: 3px;
+  }
+}
+
+.form__top {
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
